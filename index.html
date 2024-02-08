@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Final Hackathon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-weight: normal;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+        .twitter-header {
+            height: 10vh;
+            border-bottom: 1px solid #D6DEE5;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .sst-logo img {
+            margin-left: 60px;
+        }
+        .scaler-social {
+            margin-right: 60px;
+        }
+        .tweet-section {
+            height: calc(100vh - 10vh);
+            width: 100%;
+            display: flex;
+
+        }
+        .tweet-section-post-tweet {
+            height: 100%;
+            width: 60%;
+            background-color: #ECF8FF;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+        }
+        .tweet-section-post-tweet h1 {
+            font-size: 1.5rem;
+        }
+        .post-tweet-container {
+            height: 300px;
+            width: 500px;
+            border: 1px solid #D6DEE5;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        .write-tweet-box {
+            height: 50%;
+            width: 90%;
+            /* border: 2px solid red; */
+            display: flex;
+            gap: 10px;
+        }
+        .horizontal-line {
+            color: #ECF8FF;
+            width: 90%;
+        }
+        .post-tweet {
+            height: 30%;
+            width: 90%;
+            /* border: 2px solid blue; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .post-tweet-btn {
+            height: 2.5rem;
+            width: 6rem;
+            border: none;
+            background-color: #0041CA;
+            outline: none;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            border-radius: 25px;
+        }
+        .post-tweet-btn:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="twitter-header">
+        <div class="sst-logo">
+            <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/033/original/SST_Logo.png?1706888781" alt="">
+        </div>
+        <div class="scaler-social">
+            <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/032/original/scaler-social.png?1706888764" alt="">
+        </div>
+    </div>
+    <div class="tweet-section">
+        <div class="tweet-section-post-tweet">
+            <h1>Post your thoughts here</h1>
+            <div class="post-tweet-container">
+                <div class="write-tweet-box">
+                    <div class="profile-img">
+                        <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/031/original/profile_image.png?1706888739" alt="">
+                    </div>
+                    <textarea maxlength="100" class="write-text" placeholder="Post your thoughts here....." name="" id=""></textarea>
+                </div>
+                <hr class="horizontal-line">
+                <div class="post-tweet">
+                   <h1>0/100</h1>
+                   <button class="post-tweet-btn">Post</button>
+                </div>
+            </div>
+        </div>
+        <div class="tweet-display">
+           <h1>Your Feed</h1>
+           <div class="tweet-content-box">
+                <div class="profile-img">
+                    <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/031/original/profile_image.png?1706888739" alt="">
+                </div>
+                <div class="tweet-content">
+                    <div class="profile-name-username">
+                        <h1 class="profile-name">Harshit Shah</h1>
+                        <h1 class="profile-username">@harshit.shah</h1>
+                    </div>
+                    <div class="tweet-content-text">
+                        Hello, This is SST x Twitter 
+                    </div>
+                    <div class="tweet-like-comment-box">
+                        <div class="comment-icon"> <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/026/original/comment.png?1706888619" alt=""></div>
+                        <div class="heart-icon">
+                            <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/029/original/heart.png?1706888679" alt="">
+                        </div>
+                        <div class="liked-heart-icon">
+                            <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/025/original/state_clicked.png?1706888455" alt="">
+                        </div>
+                     </div>
+                </div>
+           </div>
+           <div class="comment-section">
+             <div class="comment-section-box">
+                <div class="profile-img">
+                    <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/031/original/profile_image.png?1706888739" alt="">
+                </div>
+                <div class="comment-section-content">
+                    <div class="profile-name-username">
+                        <h1 class="profile-username">@harshit.shah</h1>
+                    </div>
+                    <div class="tweet-content-text">
+                       
+                    </div>
+                    <div class="comment-like-section">
+                        <div class="comment-icon"> <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/026/original/comment.png?1706888619" alt=""></div>
+                        <div class="heart-icon">
+                            <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/029/original/heart.png?1706888679" alt="">
+                        </div>
+                        <div class="liked-heart-icon">
+                            <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/025/original/state_clicked.png?1706888455" alt="">
+                        </div>
+                    </div>
+                </div>
+             </div>
+           </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
